@@ -40,6 +40,7 @@
 	height: 96%;
 	overflow: hidden;
 	filter: blur(64px);
+  	pointer-events: none;
 }
 
 .blobs li {

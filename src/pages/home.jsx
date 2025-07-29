@@ -43,7 +43,7 @@ const Home = () => {
 
 
 
-        <section id="about" class="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-rose-800 to-pink-900 text-white">
+        <section id="about" class="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-rose-600 to-pink-700 text-white">
           <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-100 sm:text-lg ">
               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-100">Apa itu BEM Chat?</h2>
@@ -58,7 +58,7 @@ const Home = () => {
 
 
 
-        <section id="features" class="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-cyan-900 to-sky-900">
+        <section id="features" class="sticky top-0 h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-b from-secondary to-sky-600">
 
           <div class="py-8 px-4 mx-auto w-screen items-center justify-center sm:py-20 lg:px-8">
 

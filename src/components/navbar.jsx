@@ -5,12 +5,11 @@ const Navbar = () => {
 
   return (
     <nav className="fixed md:fixed top-0 left-0 w-screen z-50">
-      <div className=" mt-6 md:mt-4 mx-auto px-4 mx-10 md:px-12 py-4 flex justify-between items-center bg-white/10 backdrop-blur-2xl border border-white/20 text-white rounded-3xl">
+      <div className=" mt-6 md:mt-4 mx-auto px-4 mx-10 md:mx-20 md:px-12 py-4 flex justify-between items-center bg-white/10 backdrop-blur-2xl border border-white/20 text-white rounded-3xl">
         <div className="text-xl font-bold">
           <a href="#">BEM Chat!</a>
         </div>
 
-        {/* Hamburger Button */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -42,14 +41,12 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Nav Links - Desktop */}
-        <ul className="hidden md:flex space-x-10 font-medium text-sm md:text-md">
+        <ul className="hidden md:flex space-x-10 font-medium text-sm md:text-lg">
           <li><a href="#about" className="hover:text-secondary">About</a></li>
           <li><a href="#features" className="hover:text-secondary">Features</a></li>
           <li><a href="#contact" className="hover:text-secondary">Contact</a></li>
         </ul>
 
-        {/* Chat Button - Desktop */}
         <div className="hidden md:block">
           <button
             onClick={() => window.location.href = "/messages"}
@@ -60,7 +57,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-white/20 backdrop-blur-xl rounded-b-3xl px-6 py-4 text-white">
           <ul className="space-y-4 font-medium text-md">
