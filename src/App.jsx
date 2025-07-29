@@ -12,7 +12,23 @@ function App() {
       <Navbar />
       <div class="relative">
 
-        <section id="home" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-600 to-indigo-900 ">
+        <section id="home" class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-900 ">
+            <ul class="blobs">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
 
           <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
 
@@ -33,7 +49,7 @@ function App() {
 
 
 
-        <section id="about" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-rose-800 to-pink-900 text-white">
+        <section id="about" class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-rose-800 to-pink-900 text-white">
           <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div class="font-light text-gray-100 sm:text-lg ">
               <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-100">Apa itu BEM Chat?</h2>
@@ -48,7 +64,7 @@ function App() {
 
 
 
-        <section id="features" class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-cyan-900 to-sky-900">
+        <section id="features" class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-cyan-900 to-sky-900">
 
           <div class="py-8 px-4 mx-auto max-w-screen-xl items-center  justify-center sm:py-20 lg:px-8">
 
@@ -95,7 +111,7 @@ function App() {
 
 
 
-        <section id="contact" class="min-h-screen flex flex-col justify-center bg-gradient-to-b from-blue-900 to-gray-900">
+        <section id="contact" class="sticky top-0 h-screen flex flex-col justify-center bg-gradient-to-b from-blue-900 to-gray-900">
           <div class="mx-24 my-10">
 
             <h1 class="mt-2 text-2xl font-semibold text-white md:text-3xl ">Yuk, ngobrol bareng kami!</h1>
@@ -127,7 +143,7 @@ function App() {
                                 <a href="#" class="hover:underline me-4 md:me-6">About</a>
                             </li>
                             <li>
-                                <a href="#" class="hover:underline me-4 md:me-6">features</a>
+                                <a href="#" class="hover:underline me-4 md:me-6">Features</a>
                             </li>
                             <li>
                                 <a href="#" class="hover:underline">Contact</a>
