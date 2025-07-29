@@ -11,9 +11,9 @@ const Navbar = () => {
 
       <ul class="flex text-white space-x-10 font-medium">
         <li><a href="#" class="hover:text-secondary">Home</a></li>
-        <li><a href="#layanan" class="hover:text-secondary">Layanan Unggulan</a></li>
-        <li><a href="#kontak" class="hover:text-secondary">Kontak</a></li>
-        <li><a href="#chatt" class="hover:text-secondary">Chat</a></li>
+        <li><a href="#about" class="hover:text-secondary">About</a></li>
+        <li><a href="#features" class="hover:text-secondary">Features</a></li>
+        <li><a href="#contact" class="hover:text-secondary">Contact</a></li>
       </ul>
     </div>
   </nav>
