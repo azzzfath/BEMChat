@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import MessageList from "../components/MessageList";
-import MessageInput from "../components/MessageInput";
+import MessageList from "../components/messageList";
+import MessageInput from "../components/messageInput";
 
 function Messages() {
   const [messages, setMessages] = useState([]);
