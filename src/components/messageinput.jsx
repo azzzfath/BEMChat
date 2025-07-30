@@ -12,7 +12,6 @@ function MessageInput({ sender, onSend }) {
 
   return (
     <div className="flex w-full flex-col gap-2">
-        <p class="text-ligth text-md">{sender}</p>
       <input
         type="text"
         value={text}
