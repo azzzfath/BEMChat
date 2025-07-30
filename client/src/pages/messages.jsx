@@ -89,6 +89,36 @@ function Messages() {
     }
   };
 
+  const deleteMessage = async (id) => {
+    try {
+      const res = await fetch(`http://localhost:3000/api/messages/${id}`, {
+        method: "DELETE",
+      });
+
+      if (!res.ok) throw new Error("Gagal menghapus pesan");
+
+      fetchChatHistory(); // refresh pesan
+    } catch (err) {
+      console.error("Error saat menghapus pesan:", err);
+    }
+  };
+
+  const updateMessage = async (id, newText) => {
+    try {
+      const res = await fetch(`http://localhost:3000/api/messages/${id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: newText }),
+      });
+
+      if (!res.ok) throw new Error("Gagal mengupdate pesan");
+
+      fetchChatHistory(); // refresh pesan
+    } catch (err) {
+      console.error("Error saat mengupdate pesan:", err);
+    }
+  };
+
   
 
   return (
@@ -140,7 +170,11 @@ function Messages() {
       {/* Chat Area */}
       <div>
         <div className="border rounded p-4 bg-white shadow md:h-[75vh] overflow-y-auto mb-4">
-          <MessageList messages={chatMessages} />
+          <MessageList
+  messages={chatMessages}
+  onDelete={deleteMessage}
+  onUpdate={updateMessage}
+/>
         </div>
 
         <div className="flex">
@@ -160,6 +194,7 @@ function Messages() {
         </div>
       </div>
     </div>
+    
   );
 }
 
