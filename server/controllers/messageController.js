@@ -16,8 +16,11 @@ export const getReceiversBySender = async (req, res) => {
   const { sender } = req.params;
 
   try {
-    const receivers = await Message.find({ sender }).distinct('receiver');
-    res.json(receivers);
+    const sentTo = await Message.find({ sender }).distinct('receiver');
+    const receivedFrom = await Message.find({ receiver: sender }).distinct('sender');
+
+    const all = [...new Set([...sentTo, ...receivedFrom])]; // gabungkan & hapus duplikat
+    res.json(all);
   } catch (err) {
     res.status(500).json({ error: 'Gagal mengambil daftar penerima' });
   }

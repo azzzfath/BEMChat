@@ -14,11 +14,10 @@ app.use('/api', messageRoutes);
 mongoose.connect('mongodb://localhost:27017/bemchat', {
 })
 .then(() => {
-  console.log('✅ Terhubung ke MongoDB');
+  console.log('Terhubung ke MongoDB');
   app.listen(PORT, () => {
-    console.log(`🚀 Server berjalan di http://localhost:${PORT}`);
   });
 })
 .catch((err) => {
-  console.error('❌ Gagal konek MongoDB:', err);
+  console.error('Gagal konek MongoDB', err);
 });

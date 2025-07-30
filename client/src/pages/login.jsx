@@ -13,8 +13,8 @@ const Login = () => {
   };
 
   return (
-    <div className="h-screen w-screen flex justify-center items-center bg-gradient-to-br from-red-600  via-violet-500 to-cyan-300">
-      <div className="md:py-12 md:px-10 py-8 pb-4 px-6 bg-white/20 border border-white/10 rounded-lg">
+    <div className="h-screen w-screen flex justify-center items-center bg-gradient-to-r from-blue-600 to-indigo-900">
+      <div className="md:py-12 md:px-10 py-8 pb-4 px-6 shadow bg-white/20 border border-white/10 rounded-lg">
         <h2 className="text-white text-xl font-bold mb-4">Login</h2>
         <form>
           <input

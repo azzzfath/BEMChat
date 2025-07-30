@@ -108,11 +108,11 @@ const Home = () => {
         <section id="contact" class="sticky top-0 h-screen w-screen flex flex-col justify-center bg-gradient-to-b from-blue-900 to-gray-900">
           <div class="mx-24 my-10">
 
-            <h1 class="mt-2 text-2xl font-semibold text-white md:text-3xl ">Yuk, ngobrol bareng kami!</h1>
+            <h1 class="mt-2 text-center text-xl md:text-4xl font-semibold text-white md:text-3xl ">Yuk, ngobrol bareng kami!</h1>
 
-            <p class="mt-3 mb-8 text-gray-200">Punya pertanyaan atau saran? Langsung hubungi aja</p>
+            <p class="mt-3 mb-8 text-md md:text-2xl text-gray-200 text-center mb-2 md:mb-6">Punya pertanyaan atau saran? Langsung hubungi aja</p>
 
-            <div>
+            <div className='text-center'>
 
                 <h2 class="mt-4 text-lg font-medium text-gray-100 ">Hakim</h2>
                 <p class="mt-2 text-gray-100 ">Line @kimnzh</p>
